@@ -1,5 +1,18 @@
 # React + TypeScript + Vite
 
+Тестовое задание, использовал React,TS, MUI, а также разные варианты стилизации: глобальные стили, Styled Components (Emotion), inline styles (sx prop).<br>
+
+**Для запука проекта, скачать и npm i, npm run dev, запустится стрница со всеми задачами.<br>**
+
+**Задача 1: Верстка веб-страницы по дизайну<br>**
+Коммит c31135bac447c111a6d5501146022d775fc6733a: Add: Добавялет страницу выработки станков с карточкой на css и остальные на CircularProgressbar<br/>
+**Задача 2. Сверстать собственный макет веб-страницы<br>**
+Коммит 768a3fed7a7d8f5aa1243476499362b2effc8c36: Add: Добавялет страницу Учета простоя оборудования<br/>
+**Задача 3: Редизайн управляемой формы для планшета<br>**
+Коммит cab276bd69a5070d722dadd07bbe52e2529916c7: Add: Добавялет страницу управления с планшета<br/>
+
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
