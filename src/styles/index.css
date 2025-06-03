@@ -212,3 +212,113 @@ h1, h2, h3 {
     text-anchor: middle;
     transform: translate(3px, 3px);
 }
+
+.records-container {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    margin-top: 50px;
+}
+
+.records-container h2 {
+    font-family: 'Panton', sans-serif;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #315AB6;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    gap: 15px;
+    padding: 15px 15px;
+    background: #f5f7fa;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.table-header .header-cell {
+    font-size: 20px;
+    line-height: 120%;
+    align-items: center;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.table-row.has-reason:hover {
+    background: #f0f7ff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.table-row.expanded {
+    grid-template-rows: auto auto;
+    background: #f0f7ff;
+}
+
+.row-cell {
+    display: flex;
+    align-items: center;
+}
+
+.machine {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 120%;
+    color: #333;
+}
+
+.operator {
+    color: #315AB6;
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.reason {
+    color: #666;
+    position: relative;
+}
+
+.reason-details {
+    grid-column: 1 / -1;
+    background: white;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    position: relative;
+    color: #333;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #315AB6;
+}
+
+@media (max-width: 768px) {
+    .table-header, .table-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    .reason {
+        grid-column: 1 / -1;
+    }
+}
