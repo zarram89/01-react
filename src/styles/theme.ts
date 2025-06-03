@@ -15,7 +15,7 @@ export const theme = createTheme({
   typography: {
     fontFamily: 'Proxima Nova, Arial, sans-serif',
     h1: {
-      fontFamily: 'Panton ExtraBold, Arial, sans-serif',
+      fontFamily: 'Panton, Arial, sans-serif',
       fontSize: '1.8rem',
       '@media (min-width:768px)': {
         fontSize: '2.2rem',
