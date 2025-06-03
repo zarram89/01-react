@@ -7,6 +7,8 @@ import {theme} from './styles/theme';
 import './styles/index.css';
 import {machines} from './mocks/machines.ts';
 import {records} from './mocks/records.ts';
+import {SessionEnd} from "./components/SessionEnd";
+
 
 const App: React.FC = () => {
   const [expandedRow, setExpandedRow] = useState<number | null>(null);
@@ -62,6 +64,8 @@ const App: React.FC = () => {
             </div>
           ))}
         </div>
+
+        <SessionEnd/>
       </div>
     </ThemeProvider>
   );
